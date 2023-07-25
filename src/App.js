@@ -81,18 +81,20 @@ function App() {
         {" "}
         Add User <BsPersonFillAdd />
       </button>
-      {users.map((user) => {
-        return (
-          <div>
-            {" "}
-            <table align="center">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Number</th>
-                </tr>
-              </thead>
+
+      <div>
+        {" "}
+        <table align="center">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Number</th>
+              <th colSpan={2}>Actions </th>
+            </tr>
+          </thead>
+          {users.map((user) => {
+            return (
               <tbody>
                 <tr>
                   <td>{user.name}</td>
@@ -126,10 +128,10 @@ function App() {
                   </td>
                 </tr>
               </tbody>
-            </table>
-          </div>
-        );
-      })}
+            );
+          })}
+        </table>
+      </div>
     </div>
   );
 }
