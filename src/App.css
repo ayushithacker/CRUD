@@ -52,7 +52,11 @@ input {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+table,
+th,
+td {
+  border: 1px solid black;
+}
 .App-link {
   color: #61dafb;
 }
